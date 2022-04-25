@@ -2,15 +2,15 @@ import 'dart:io';
 
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Agora/index.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/DoctorWise_Booking/accepted_patient_list.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/DoctorWise_Booking/doctorwise_homescreen.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/time_allocation_home.dart';
-import 'package:doctor_consultation_app/screens/Consultant_profile/edit_screen.dart';
-import 'package:doctor_consultation_app/screens/Consultant_profile/proofile_update_screen.dart';
-import 'package:doctor_consultation_app/screens/login_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Consultant_Agora/index.dart';
+import 'package:rwadocs/screens/Consultant_Home/DoctorWise_Booking/accepted_patient_list.dart';
+import 'package:rwadocs/screens/Consultant_Home/DoctorWise_Booking/doctorwise_homescreen.dart';
+import 'package:rwadocs/screens/Consultant_Home/time_allocation_home.dart';
+import 'package:rwadocs/screens/Consultant_profile/edit_screen.dart';
+import 'package:rwadocs/screens/Consultant_profile/proofile_update_screen.dart';
+import 'package:rwadocs/screens/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -539,7 +539,7 @@ class _ConsultantHomeScreenState extends State<ConsultantHomeScreen> {
                                         'Use the below button or go to your profile tab to finsh your profile update',
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold,
-                                            fontSize: size.height*0.02,
+                                            fontSize: size.height * 0.02,
                                             color: Colors.grey),
                                       ),
                                       SizedBox(

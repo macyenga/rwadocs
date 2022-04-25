@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:agora_rtc_engine/rtc_local_view.dart' as RtcLocalView;
 import 'package:agora_rtc_engine/rtc_remote_view.dart' as RtcRemoteView;
-import 'package:doctor_consultation_app/Widgets/settings.dart';
-import 'package:doctor_consultation_app/constant.dart';
+import 'package:rwadocs/Widgets/settings.dart';
+import 'package:rwadocs/constant.dart';
 import 'package:flutter/material.dart';
 
 class CallPage extends StatefulWidget {

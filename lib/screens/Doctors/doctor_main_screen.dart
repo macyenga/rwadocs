@@ -1,9 +1,9 @@
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Doctors/Categories/all_doc_screen.dart';
-import 'package:doctor_consultation_app/screens/Doctors/Categories/dentist_screen.dart';
-import 'package:doctor_consultation_app/screens/Doctors/Categories/oncologist_screen.dart';
-import 'package:doctor_consultation_app/screens/Doctors/Categories/paedetrician_screen.dart';
-import 'package:doctor_consultation_app/screens/Doctors/Categories/urologist_screen.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Doctors/Categories/all_doc_screen.dart';
+import 'package:rwadocs/screens/Doctors/Categories/dentist_screen.dart';
+import 'package:rwadocs/screens/Doctors/Categories/oncologist_screen.dart';
+import 'package:rwadocs/screens/Doctors/Categories/paedetrician_screen.dart';
+import 'package:rwadocs/screens/Doctors/Categories/urologist_screen.dart';
 import 'package:flutter/material.dart';
 
 class DoctorMainScreen extends StatefulWidget {

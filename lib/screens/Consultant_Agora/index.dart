@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -25,7 +25,6 @@ class IndexState extends State<IndexPage> {
   bool _validateError = false;
 
   ClientRole _role = ClientRole.Broadcaster;
-  
 
   Future<void> getCode() async {
     Firestore.instance
@@ -84,7 +83,7 @@ class IndexState extends State<IndexPage> {
                     'When you starts, the patient will get notified.',
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 actions: <Widget>[
@@ -302,7 +301,6 @@ class IndexState extends State<IndexPage> {
                                       onTap: () {
                                         getCode().whenComplete(() {
                                           showStartingDialog(context);
-                                     
                                         });
                                       },
                                       child: Center(

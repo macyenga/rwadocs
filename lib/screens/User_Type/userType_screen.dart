@@ -1,8 +1,8 @@
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/Widgets/curved_widget.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Register/consultant_register_screen.dart';
-import 'package:doctor_consultation_app/screens/register_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/Widgets/curved_widget.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Consultant_Register/consultant_register_screen.dart';
+import 'package:rwadocs/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:gender_selection/gender_selection.dart';
 
@@ -44,7 +44,7 @@ class _UserTypeScreenState extends State<UserTypeScreen> {
                               'Choose your type',
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontSize:size.height*0.05,
+                                  fontSize: size.height * 0.05,
                                   fontWeight: FontWeight.bold),
                             ),
                             SizedBox(
@@ -70,7 +70,9 @@ class _UserTypeScreenState extends State<UserTypeScreen> {
               Center(
                 child: Text(
                   'Select your type',
-                  style: TextStyle(fontSize: size.height*0.03, fontWeight: FontWeight.w600),
+                  style: TextStyle(
+                      fontSize: size.height * 0.03,
+                      fontWeight: FontWeight.w600),
                 ),
               ),
             ),
@@ -93,7 +95,7 @@ class _UserTypeScreenState extends State<UserTypeScreen> {
                         );
                       },
                       child: Container(
-                         width: size.width*0.4,
+                        width: size.width * 0.4,
                         child: Column(
                           children: [
                             Container(
@@ -123,7 +125,8 @@ class _UserTypeScreenState extends State<UserTypeScreen> {
                             Text(
                               'I\'m a Consultant',
                               style: TextStyle(
-                                  fontSize: size.height*0.02, fontWeight: FontWeight.w600),
+                                  fontSize: size.height * 0.02,
+                                  fontWeight: FontWeight.w600),
                             ),
                           ],
                         ),
@@ -140,7 +143,7 @@ class _UserTypeScreenState extends State<UserTypeScreen> {
                         );
                       },
                       child: Container(
-                        width: size.width*0.4,
+                        width: size.width * 0.4,
                         child: Column(
                           children: [
                             Container(
@@ -168,7 +171,8 @@ class _UserTypeScreenState extends State<UserTypeScreen> {
                             Text(
                               'I need a Consultant',
                               style: TextStyle(
-                                  fontSize: size.height*0.02, fontWeight: FontWeight.w600),
+                                  fontSize: size.height * 0.02,
+                                  fontWeight: FontWeight.w600),
                             ),
                           ],
                         ),

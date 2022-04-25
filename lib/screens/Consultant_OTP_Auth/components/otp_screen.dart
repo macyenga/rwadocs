@@ -1,7 +1,7 @@
-import 'package:doctor_consultation_app/screens/Consultant_Home/consultant_home_screen.dart';
-import 'package:doctor_consultation_app/screens/Consultant_OTP_Auth/components/otp_auth.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Register/onboard.dart';
-import 'package:doctor_consultation_app/screens/home_screen.dart';
+import 'package:rwadocs/screens/Consultant_Home/consultant_home_screen.dart';
+import 'package:rwadocs/screens/Consultant_OTP_Auth/components/otp_auth.dart';
+import 'package:rwadocs/screens/Consultant_Register/onboard.dart';
+import 'package:rwadocs/screens/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -249,7 +249,7 @@ class _OTPScreenState extends State<OTPScreen> {
     };
 
     await _firebaseAuth.verifyPhoneNumber(
-        phoneNumber: "+94${widget.mobileNumber}", //  +94
+        phoneNumber: "+250${widget.mobileNumber}", //  +250
         timeout: const Duration(seconds: 60),
         verificationCompleted: verificationCompleted,
         verificationFailed: verificationFailed,

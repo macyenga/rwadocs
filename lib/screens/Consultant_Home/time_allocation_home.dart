@@ -1,6 +1,6 @@
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/upload_time_slots.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Consultant_Home/upload_time_slots.dart';
 import 'package:flutter/material.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
@@ -51,7 +51,7 @@ class _TimeAllocationHomeState extends State<TimeAllocationHome> {
                       "assets/images/u4.png",
                       filterQuality: FilterQuality.high,
                       width: size.width * 0.3,
-                      height: size.height*0.18,
+                      height: size.height * 0.18,
                     ),
                   ),
                   isFirst: true,

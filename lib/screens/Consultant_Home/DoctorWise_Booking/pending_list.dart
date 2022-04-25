@@ -1,7 +1,7 @@
 // import 'dart:html';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -353,7 +353,7 @@ class _PendingListState extends State<PendingList> {
                                   .collection('bookinfo')
                                   .document()
                                   .setData({
-                                "code": widget.docId+ widget.pid,
+                                "code": widget.docId + widget.pid,
                                 "docId": widget.docId,
                                 "pID": widget.pid
                               });
@@ -615,7 +615,11 @@ class _PendingListState extends State<PendingList> {
                         index == 0
                             ? Text(
                                 'Pending List',
-                              style: TextStyle(fontSize: MediaQuery.of(context).size.height * 0.03,),)
+                                style: TextStyle(
+                                  fontSize:
+                                      MediaQuery.of(context).size.height * 0.03,
+                                ),
+                              )
                             : Container(),
                         ListView.builder(
                             physics: NeverScrollableScrollPhysics(),

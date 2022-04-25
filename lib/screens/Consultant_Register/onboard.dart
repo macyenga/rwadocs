@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/consultant_home_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Consultant_Home/consultant_home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -48,7 +48,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
           'lastname': widget.lastname,
           'email': widget.email,
           'address': widget.address,
-          'uid':user.uid,
+          'uid': user.uid,
           'nic': widget.nic,
           'phone': widget.mobileNumber,
           'speciality': widget.speciality,
@@ -88,7 +88,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
           'lastname': widget.lastname,
           'email': widget.email,
           'address': widget.address,
-          'uid':user.uid,
+          'uid': user.uid,
           'nic': widget.nic,
           'phone': widget.mobileNumber,
           'speciality': widget.speciality,
@@ -211,7 +211,8 @@ class _OnboardScreenState extends State<OnboardScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => ConsultantHomeScreen(''),
+                                  builder: (context) =>
+                                      ConsultantHomeScreen(''),
                                 ),
                               );
                             },

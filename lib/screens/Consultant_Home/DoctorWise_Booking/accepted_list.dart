@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/DoctorWise_Booking/doctorwise_homescreen.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/time_allocation_home.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Agora/index.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/screens/Consultant_Home/DoctorWise_Booking/doctorwise_homescreen.dart';
+import 'package:rwadocs/screens/Consultant_Home/time_allocation_home.dart';
+import 'package:rwadocs/screens/Consultant_Agora/index.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -145,7 +145,7 @@ class _AcceptedListState extends State<AcceptedList> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) =>
-                                        IndexPage(widget.docId,widget.pid),
+                                        IndexPage(widget.docId, widget.pid),
                                   ),
                                 );
                               },
@@ -326,7 +326,6 @@ class _AcceptedListState extends State<AcceptedList> {
                               ],
                             ),
                             onPressed: () {
-                             
                               Navigator.pop(context, true);
                             },
                           ),

@@ -1,5 +1,5 @@
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/screens/detail_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class OncologistScreen extends StatefulWidget {

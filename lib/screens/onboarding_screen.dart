@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/home_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +26,8 @@ class OnboardingScreen extends StatefulWidget {
       this.lastname,
       this.email,
       this.address,
-      this.sex, this.password})
+      this.sex,
+      this.password})
       : super(key: key);
   @override
   _OnboardingScreenState createState() => _OnboardingScreenState();
@@ -52,10 +53,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           'lastname': widget.lastname,
           'email': widget.email,
           'address': widget.address,
-          'uid':user.uid,
+          'uid': user.uid,
           'gender': widget.sex,
           'phone': widget.mobileNumber,
-          'password':widget.password,
+          'password': widget.password,
           'usertype': "patient",
         });
         print("${widget.firstname}");

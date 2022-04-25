@@ -1,7 +1,7 @@
-import 'package:doctor_consultation_app/Widgets/curved_widget.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/consultant_home_screen.dart';
-import 'package:doctor_consultation_app/screens/Consultant_profile/edit_screen.dart';
+import 'package:rwadocs/Widgets/curved_widget.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Consultant_Home/consultant_home_screen.dart';
+import 'package:rwadocs/screens/Consultant_profile/edit_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProfileUpdateScreen extends StatefulWidget {
@@ -215,7 +215,7 @@ class _ProfileUpdateScreenState extends State<ProfileUpdateScreen>
                               width: 10,
                             ),
                             Text(
-                              '+94763529962',
+                              '+250763529962',
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.w500),
                             )

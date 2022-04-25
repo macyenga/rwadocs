@@ -1,4 +1,4 @@
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
 import 'package:flutter/material.dart';
 
 class PastScreen extends StatefulWidget {

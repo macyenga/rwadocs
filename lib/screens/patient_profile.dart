@@ -1,6 +1,6 @@
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/Widgets/curved_widget.dart';
-import 'package:doctor_consultation_app/constant.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/Widgets/curved_widget.dart';
+import 'package:rwadocs/constant.dart';
 import 'package:flutter/material.dart';
 
 class PatientProfile extends StatefulWidget {
@@ -9,7 +9,7 @@ class PatientProfile extends StatefulWidget {
 }
 
 class _PatientProfileState extends State<PatientProfile> {
-   String email;
+  String email;
   String firstName;
   String lastName;
   String password;
@@ -357,7 +357,7 @@ class _PatientProfileState extends State<PatientProfile> {
                               FadeAnimation(
                                 1.7,
                                 Container(
-                                  height: size.height*0.06,
+                                  height: size.height * 0.06,
                                   width: size.width * 0.5,
                                   decoration: BoxDecoration(
                                     // gradient: redGradient,
@@ -403,7 +403,7 @@ class _PatientProfileState extends State<PatientProfile> {
                                       'Update',
                                       style: TextStyle(
                                         color: kWhiteColor,
-                                        fontSize: size.height*0.025,
+                                        fontSize: size.height * 0.025,
                                       ),
                                     ),
                                   ),
@@ -427,7 +427,7 @@ class _PatientProfileState extends State<PatientProfile> {
             //   1.8,
             //   Align(
             //     alignment: Alignment.bottomCenter,
-            //     child: Text("NexClinic V.1.0"),
+            //     child: Text("Rwanda Doctors V.1.0"),
             //   ),
             // ),
             // SizedBox(

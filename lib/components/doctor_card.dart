@@ -1,5 +1,5 @@
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/detail_screen.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class DoctorCard extends StatelessWidget {
@@ -11,14 +11,14 @@ class DoctorCard extends StatelessWidget {
   DoctorCard(this._name, this._description, this._imageUrl, this._bgColor);
 
   @override
-  Widget build(BuildContext context) { // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //     builder: (context) => DetailScreen(_name, _description, _imageUrl),
-        //   ),
-        // );
+  Widget build(BuildContext context) {
+    // Navigator.push(
+    //   context,
+    //   MaterialPageRoute(
+    //     builder: (context) => DetailScreen(_name, _description, _imageUrl),
+    //   ),
+    // );
     return InkWell(
-      
       onTap: () {
         // Navigator.push(
         //   context,
@@ -28,7 +28,6 @@ class DoctorCard extends StatelessWidget {
         // );
       },
       child: DecoratedBox(
-        
         decoration: BoxDecoration(
           color: _bgColor,
           borderRadius: BorderRadius.circular(10),

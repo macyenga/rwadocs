@@ -1,4 +1,4 @@
-import 'package:doctor_consultation_app/constant.dart';
+import 'package:rwadocs/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -11,8 +11,10 @@ class SearchBar extends StatelessWidget {
       children: <Widget>[
         Container(
           width: MediaQuery.of(context).size.width * 0.7,
-          padding: EdgeInsets.symmetric(horizontal: 30,
-          vertical: 15,),
+          padding: EdgeInsets.symmetric(
+            horizontal: 30,
+            vertical: 15,
+          ),
           decoration: BoxDecoration(
             color: kSearchBackgroundColor,
             borderRadius: BorderRadius.circular(30),

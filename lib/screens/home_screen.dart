@@ -1,17 +1,17 @@
 import 'dart:io';
 
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/components/category_card.dart';
-import 'package:doctor_consultation_app/components/doctor_card.dart';
-import 'package:doctor_consultation_app/components/search_bar.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Doctors/doctor_main_screen.dart';
-import 'package:doctor_consultation_app/screens/My_appointments/myAppintmentsHome_screen.dart';
-import 'package:doctor_consultation_app/screens/Patient_Agora/index.dart';
-import 'package:doctor_consultation_app/screens/login_screen.dart';
-import 'package:doctor_consultation_app/screens/onboarding_screen.dart';
-import 'package:doctor_consultation_app/screens/patient_profile.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/components/category_card.dart';
+import 'package:rwadocs/components/doctor_card.dart';
+import 'package:rwadocs/components/search_bar.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Doctors/doctor_main_screen.dart';
+import 'package:rwadocs/screens/My_appointments/myAppintmentsHome_screen.dart';
+import 'package:rwadocs/screens/Patient_Agora/index.dart';
+import 'package:rwadocs/screens/login_screen.dart';
+import 'package:rwadocs/screens/onboarding_screen.dart';
+import 'package:rwadocs/screens/patient_profile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => LoginScreen("",""),
+                      builder: (context) => LoginScreen("", ""),
                     ),
                   );
                 });
@@ -237,7 +237,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   1.4,
                   ListTile(
                     leading: Icon(Icons.person, color: Colors.white),
-                    title: Text('My Profile',style: TextStyle(color: Colors.white),),
+                    title: Text(
+                      'My Profile',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -492,7 +495,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ][currentIndex],
           floatingActionButton: Spring(
             key: _key,
-            animStatus: (status){},
+            animStatus: (status) {},
             motion: Motion.Mirror,
             animType: AnimType.Bubble,
             animDuration: Duration(seconds: 5),

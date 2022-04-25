@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/Widgets/curved_widget.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/consultant_home_screen.dart';
-import 'package:doctor_consultation_app/screens/home_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/Widgets/curved_widget.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Consultant_Home/consultant_home_screen.dart';
+import 'package:rwadocs/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatefulWidget {
@@ -16,7 +16,7 @@ class LoginForm extends StatefulWidget {
 class _LoginFormState extends State<LoginForm> {
   TextEditingController phoneController = TextEditingController();
   String phoneNo;
-  String hintText = "+94 712345678";
+  String hintText = "+250 789690247";
   FocusNode focusNode = FocusNode();
 
   showWarningDialog(BuildContext context) {
@@ -173,7 +173,7 @@ class _LoginFormState extends State<LoginForm> {
                       ),
                       borderRadius: BorderRadius.circular(15.0),
                     ),
-                    prefixText: '+94 ',
+                    prefixText: '+250 ',
                     prefixStyle: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.w800,
@@ -212,7 +212,7 @@ class _LoginFormState extends State<LoginForm> {
       if (focusNode.hasFocus) {
         hintText = '';
       } else {
-        hintText = '+94 715676899';
+        hintText = '+250 715676899';
       }
       setState(() {});
     });

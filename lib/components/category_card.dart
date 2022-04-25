@@ -1,4 +1,4 @@
-import 'package:doctor_consultation_app/constant.dart';
+import 'package:rwadocs/constant.dart';
 import 'package:flutter/material.dart';
 
 import '../constant.dart';
@@ -18,7 +18,7 @@ class CategoryCard extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Card(
-             color: Colors.white,
+            color: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20),
             ),

@@ -1,7 +1,7 @@
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/Widgets/curved_widget.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Consultant_OTP_Auth/phone_auth.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/Widgets/curved_widget.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Consultant_OTP_Auth/phone_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:gender_selection/gender_selection.dart';
 
@@ -27,7 +27,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
     'Physician',
     'Psychiatrist'
   ]; // Option 2
-  
+
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
 
@@ -37,8 +37,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
   TextEditingController nicController = TextEditingController();
   TextEditingController addressController = TextEditingController();
   TextEditingController specialityController = TextEditingController();
-    TextEditingController passwordController = TextEditingController();
-
+  TextEditingController passwordController = TextEditingController();
 
   Widget firstNameField() {
     return Container(
@@ -153,7 +152,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
 
   Widget addressField() {
     return Container(
-       width: MediaQuery.of(context).size.width * 0.8,
+        width: MediaQuery.of(context).size.width * 0.8,
         child: TextFormField(
           controller: addressController,
           autofocus: false,
@@ -190,7 +189,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
 
   Widget nicField() {
     return Container(
-       width: MediaQuery.of(context).size.width * 0.8,
+        width: MediaQuery.of(context).size.width * 0.8,
         child: TextFormField(
           controller: nicController,
           autofocus: false,
@@ -324,6 +323,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
           },
         ));
   }
+
   void _showSnackBar() {
     final snackBar = SnackBar(
       content: Text('Please select your Spoeciality!'),
@@ -338,7 +338,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SafeArea(
-          child: Scaffold(
+      child: Scaffold(
         key: _scaffoldKey,
         body: SingleChildScrollView(
           child: Column(
@@ -362,7 +362,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
                                 'Sign Up',
                                 style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: size.height*0.05,
+                                    fontSize: size.height * 0.05,
                                     fontWeight: FontWeight.bold),
                               ),
                               SizedBox(
@@ -402,7 +402,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
                           height: 5,
                         ),
                         passwordField(),
-                         SizedBox(
+                        SizedBox(
                           height: 5,
                         ),
                         addressField(),
@@ -418,10 +418,11 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
                         //   height: 10,
                         // ),
                         Container(
-                         width: MediaQuery.of(context).size.width * 0.8,
+                          width: MediaQuery.of(context).size.width * 0.8,
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(15)),
                               border: Border.all(color: Colors.grey[600])),
                           child: Padding(
                             padding: const EdgeInsets.all(12.0),
@@ -436,8 +437,8 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
                                   style: TextStyle(color: Colors.black),
                                 ), // Not necessary for Option 1
                                 value: _selectedSpeciality,
-                                onTap: (){
-                                   FocusScope.of(context).unfocus();
+                                onTap: () {
+                                  FocusScope.of(context).unfocus();
                                 },
                                 onChanged: (newValue) {
                                   setState(() {
@@ -481,13 +482,12 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => PhoneLogin(
-                                        firstname: firstnameController.text,
-                                        lastname: lastnameController.text,
-                                        email: emailController.text,
-                                        address: addressController.text,
-                                        nic: nicController.text,
-                                        speciality: _selectedSpeciality
-                                      ),
+                                          firstname: firstnameController.text,
+                                          lastname: lastnameController.text,
+                                          email: emailController.text,
+                                          address: addressController.text,
+                                          nic: nicController.text,
+                                          speciality: _selectedSpeciality),
                                     ),
                                   );
                                 } else if (_formKey.currentState.validate() &&
@@ -522,7 +522,7 @@ class _ConsultantRegisterScreenState extends State<ConsultantRegisterScreen> {
                 1.8,
                 Align(
                   alignment: Alignment.bottomCenter,
-                  child: Text("NexClinic V.1.0"),
+                  child: Text("Rwanda Doctors V.1.0"),
                 ),
               )
             ],

@@ -1,9 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/consultant_home_screen.dart';
-import 'package:doctor_consultation_app/screens/home_screen.dart';
-import 'package:doctor_consultation_app/screens/login_screen.dart';
+import 'package:rwadocs/screens/Consultant_Home/consultant_home_screen.dart';
+import 'package:rwadocs/screens/home_screen.dart';
+import 'package:rwadocs/screens/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+
+import 'Consultant_Home/consultant_home_screen.dart';
+import 'home_screen.dart';
+import 'login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

@@ -1,10 +1,10 @@
-import 'package:doctor_consultation_app/Widgets/form_widget.dart';
-import 'package:doctor_consultation_app/components/schedule_card.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/Doctor_Booking/booking_screen.dart';
-import 'package:doctor_consultation_app/screens/Doctors/Categories/all_doc_screen.dart';
-import 'package:doctor_consultation_app/screens/Doctors/doctor_main_screen.dart';
-import 'package:doctor_consultation_app/screens/Patient_Agora/index.dart';
+import 'package:rwadocs/Widgets/form_widget.dart';
+import 'package:rwadocs/components/schedule_card.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/Doctor_Booking/booking_screen.dart';
+import 'package:rwadocs/screens/Doctors/Categories/all_doc_screen.dart';
+import 'package:rwadocs/screens/Doctors/doctor_main_screen.dart';
+import 'package:rwadocs/screens/Patient_Agora/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:spring/spring.dart';
@@ -240,7 +240,7 @@ class _DetailScreenState extends State<DetailScreen> {
                         motion: Motion.Mirror,
                         animType: AnimType.Slide_In_Left,
                         animDuration: Duration(seconds: 5),
-                        animStatus: (status){},
+                        animStatus: (status) {},
                         child: Container(
                           decoration: BoxDecoration(
                             gradient: redGradient,

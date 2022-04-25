@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/screens/detail_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class AllDocScreen extends StatefulWidget {
@@ -10,8 +10,8 @@ class AllDocScreen extends StatefulWidget {
 
 class _AllDocScreenState extends State<AllDocScreen> {
   int checkedIndex1 = -1;
-  Widget buildAllDocCard(
-      int index, String firstname, String lastname, String speciality,String uid) {
+  Widget buildAllDocCard(int index, String firstname, String lastname,
+      String speciality, String uid) {
     bool checked = index == checkedIndex1;
 
     return GestureDetector(
@@ -33,11 +33,10 @@ class _AllDocScreenState extends State<AllDocScreen> {
           context,
           MaterialPageRoute(
             builder: (context) => DetailScreen(
-              firstname + " " + lastname,
-              'Heart Surgeon - Flower Hospitals',
-              'assets/images/doctor1.png',
-              uid
-            ),
+                firstname + " " + lastname,
+                'Heart Surgeon - Flower Hospitals',
+                'assets/images/doctor1.png',
+                uid),
           ),
         );
       },
@@ -171,7 +170,7 @@ class _AllDocScreenState extends State<AllDocScreen> {
                   } else {
                     print(snapshot.data.documents.runtimeType);
                     List<DocumentSnapshot> docData = snapshot.data.documents;
-                   
+
                     return GridView.builder(
                         physics: NeverScrollableScrollPhysics(),
                         scrollDirection: Axis.vertical,
@@ -187,7 +186,7 @@ class _AllDocScreenState extends State<AllDocScreen> {
                                             1),
                                 crossAxisCount: 2),
                         itemBuilder: (BuildContext context, int index) {
-                           print(docData[index]['uid']);
+                          print(docData[index]['uid']);
                           return buildAllDocCard(
                               index,
                               docData[index]['firstname'],

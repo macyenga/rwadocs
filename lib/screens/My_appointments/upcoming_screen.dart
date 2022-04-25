@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/screens/Patient_Agora/index.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/screens/Patient_Agora/index.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -207,21 +207,22 @@ class _UpcomingScreenState extends State<UpcomingScreen> {
                                     child: Center(
                                         child: Row(
                                       children: [
-                                         isbooked == 1
-                                            ?Icon(
+                                        isbooked == 1
+                                            ? Icon(
                                                 Icons.cancel,
                                                 color: Colors.white,
-                                              ):
-                                        isbooked == 2
-                                            ? Icon(
-                                                Icons.video_call,
-                                                color: Colors.white,
                                               )
-                                            :isbooked == 3
-                                                      ? Icon(
-                                                Icons.delete,
-                                                color: Colors.white,
-                                              ):Container(),
+                                            : isbooked == 2
+                                                ? Icon(
+                                                    Icons.video_call,
+                                                    color: Colors.white,
+                                                  )
+                                                : isbooked == 3
+                                                    ? Icon(
+                                                        Icons.delete,
+                                                        color: Colors.white,
+                                                      )
+                                                    : Container(),
                                         Text(
                                           isbooked == 1
                                               ? "Cancel"

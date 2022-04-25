@@ -1,5 +1,5 @@
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/onboarding_screen.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/onboarding_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -21,7 +21,8 @@ class OTPScreen extends StatefulWidget {
       this.lastname,
       this.email,
       this.address,
-      this.sex, this.password})
+      this.sex,
+      this.password})
       : assert(mobileNumber != null),
         super(key: key);
 
@@ -249,7 +250,7 @@ class _OTPScreenState extends State<OTPScreen> {
     };
 
     await _firebaseAuth.verifyPhoneNumber(
-        phoneNumber: "+94${widget.mobileNumber}", //  +94
+        phoneNumber: "+250${widget.mobileNumber}", //  +250
         timeout: const Duration(seconds: 60),
         verificationCompleted: verificationCompleted,
         verificationFailed: verificationFailed,

@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/My_appointments/myAppintmentsHome_screen.dart';
-import 'package:doctor_consultation_app/screens/detail_screen.dart';
-import 'package:doctor_consultation_app/screens/home_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/My_appointments/myAppintmentsHome_screen.dart';
+import 'package:rwadocs/screens/detail_screen.dart';
+import 'package:rwadocs/screens/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -454,22 +454,21 @@ class _BookingScreenState extends State<BookingScreen> {
   String pId = "";
   String pName = "";
   getPatientData() async {
-   
-   
     Firestore.instance
-            .collection('users')
-            .document((await FirebaseAuth.instance.currentUser()).uid)
-            .get()
-            .then((value) {
-          setState(() {
-            pId = value.data['uid'].toString();
-            pName = value.data['firstname']+" "+ value.data['lastname'].toString();
-             print('99999999999999999999999999');
-    print(pId);
-    print(pName);
-    print('99999999999999999999999999');
-          });
-        });
+        .collection('users')
+        .document((await FirebaseAuth.instance.currentUser()).uid)
+        .get()
+        .then((value) {
+      setState(() {
+        pId = value.data['uid'].toString();
+        pName =
+            value.data['firstname'] + " " + value.data['lastname'].toString();
+        print('99999999999999999999999999');
+        print(pId);
+        print(pName);
+        print('99999999999999999999999999');
+      });
+    });
     // for (int i = 0; i < list.length; i++) {
     // Firestore.instance
     //     .collection('users')
@@ -574,7 +573,7 @@ class _BookingScreenState extends State<BookingScreen> {
                   formatButtonShowsNext: false,
                 ),
                 startingDayOfWeek: StartingDayOfWeek.monday,
-                onDaySelected: (date, events) {
+                onDaySelected: (date, events, _) {
                   print(date);
                   print(date.weekday);
                   setState(() {

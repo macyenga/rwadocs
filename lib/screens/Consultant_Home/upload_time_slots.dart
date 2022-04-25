@@ -1,9 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/models/free_time_slots.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/consultant_home_screen.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/time_allocation_home.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/models/free_time_slots.dart';
+import 'package:rwadocs/screens/Consultant_Home/consultant_home_screen.dart';
+import 'package:rwadocs/screens/Consultant_Home/time_allocation_home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -241,7 +241,8 @@ class _UploadTimeSlotsState extends State<UploadTimeSlots> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => ConsultantHomeScreen(''),
+                                  builder: (context) =>
+                                      ConsultantHomeScreen(''),
                                 ),
                               );
                             },

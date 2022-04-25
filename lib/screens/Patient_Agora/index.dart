@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/constant.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -27,12 +27,12 @@ class IndexState extends State<IndexPage> {
   ClientRole _role = ClientRole.Broadcaster;
 
   Future<void> getCode() async {
-    Firestore.instance
+    FirebaseFirestore.instance
         .collection('videoCode')
-        .document(widget.pId)
+        .doc(widget.pId)
         .collection('bookinfo')
         .where('docId', isEqualTo: widget.docId)
-        .getDocuments()
+        .get()
         .then((value) {
       setState(() {
         print("code is : ${value.documents.first.data['code']}");
@@ -40,7 +40,8 @@ class IndexState extends State<IndexPage> {
       });
     });
   }
- showStartingDialog(
+
+  showStartingDialog(
     BuildContext context,
     // int index,
     // String date,
@@ -82,7 +83,7 @@ class IndexState extends State<IndexPage> {
                     'When you joins, the doctor will get notified.',
                     style: TextStyle(
                         color: Colors.black, fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 actions: <Widget>[
@@ -164,6 +165,7 @@ class IndexState extends State<IndexPage> {
               ),
             )));
   }
+
   @override
   void dispose() {
     // dispose input controller

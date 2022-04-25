@@ -1,7 +1,7 @@
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/Widgets/curved_widget.dart';
-import 'package:doctor_consultation_app/constant.dart';
-import 'package:doctor_consultation_app/screens/OTP_Auth/components/otp_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/Widgets/curved_widget.dart';
+import 'package:rwadocs/constant.dart';
+import 'package:rwadocs/screens/OTP_Auth/components/otp_screen.dart';
 import 'package:flutter/material.dart';
 
 class PhoneLogin extends StatefulWidget {
@@ -17,7 +17,8 @@ class PhoneLogin extends StatefulWidget {
       this.lastname,
       this.email,
       this.address,
-      this.sex, this.password})
+      this.sex,
+      this.password})
       : super(key: key);
 
   @override
@@ -209,7 +210,7 @@ class _PhoneLoginState extends State<PhoneLogin> with TickerProviderStateMixin {
                                                       padding:
                                                           EdgeInsets.all(4.0),
                                                       child: Text(
-                                                        "+94", // +94
+                                                        "+250", // +250
                                                         style: TextStyle(
                                                             color: Colors.black,
                                                             fontWeight:
@@ -218,7 +219,8 @@ class _PhoneLoginState extends State<PhoneLogin> with TickerProviderStateMixin {
                                                       ),
                                                     ),
                                                   ),
-                                                  autovalidate: true,
+                                                  autovalidateMode:
+                                                      AutovalidateMode.always,
                                                   autocorrect: false,
                                                   maxLengthEnforced: true,
                                                   validator: (value) {
@@ -282,7 +284,8 @@ class _PhoneLoginState extends State<PhoneLogin> with TickerProviderStateMixin {
                                                                       .sex,
                                                                   address: widget
                                                                       .address,
-                                                                      password: widget.password,
+                                                                  password: widget
+                                                                      .password,
                                                                 ),
                                                               ));
                                                         } else {

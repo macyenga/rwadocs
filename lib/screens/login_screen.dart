@@ -1,20 +1,20 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:doctor_consultation_app/Aimation/Fade_animation.dart';
-import 'package:doctor_consultation_app/New_Login/new_otp_screen.dart';
-import 'package:doctor_consultation_app/Widgets/curved_widget.dart';
-import 'package:doctor_consultation_app/screens/Consultant_Home/consultant_home_screen.dart';
-import 'package:doctor_consultation_app/screens/User_Type/userType_screen.dart';
-import 'package:doctor_consultation_app/screens/home_screen.dart';
-import 'package:doctor_consultation_app/screens/login_form_screen.dart';
-import 'package:doctor_consultation_app/screens/onboarding_screen.dart';
-import 'package:doctor_consultation_app/screens/register_screen.dart';
+import 'package:rwadocs/Aimation/Fade_animation.dart';
+import 'package:rwadocs/New_Login/new_otp_screen.dart';
+import 'package:rwadocs/Widgets/curved_widget.dart';
+import 'package:rwadocs/screens/Consultant_Home/consultant_home_screen.dart';
+import 'package:rwadocs/screens/User_Type/userType_screen.dart';
+import 'package:rwadocs/screens/home_screen.dart';
+import 'package:rwadocs/screens/login_form_screen.dart';
+import 'package:rwadocs/screens/onboarding_screen.dart';
+import 'package:rwadocs/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import '../constant.dart';
 
 class LoginScreen extends StatefulWidget {
   final String usertype;
   final String uid;
-  LoginScreen(this.usertype,this.uid);
+  LoginScreen(this.usertype, this.uid);
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -200,7 +200,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             Text(
-                              'NexClinic',
+                              'Rwanda Doctors',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 40,
@@ -305,7 +305,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                                 prefix: Container(
                                                   padding: EdgeInsets.all(4.0),
                                                   child: Text(
-                                                    "+94", // +94
+                                                    "+250", // +250
                                                     style: TextStyle(
                                                         color: Colors.black,
                                                         fontWeight:
@@ -521,7 +521,7 @@ class _LoginScreenState extends State<LoginScreen> {
               1.8,
               Align(
                 alignment: Alignment.bottomCenter,
-                child: Text("NexClinic V.1.0"),
+                child: Text("Rwanda Doctors V.1.0"),
               ),
             )
           ],

@@ -1,4 +1,4 @@
-import 'package:doctor_consultation_app/constant.dart';
+import 'package:rwadocs/constant.dart';
 import 'package:flutter/material.dart';
 
 class ScheduleCard extends StatelessWidget {
